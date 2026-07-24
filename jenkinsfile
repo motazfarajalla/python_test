@@ -1,9 +1,10 @@
 pipeline {
-    agent { 
-        node {
-            label 'agent-alpine-1'
-            }
-      }
+    agent any
+    //agent { 
+    //    node {
+    //        label 'agent-alpine-1'
+    //        }
+    //  }
     triggers {
         pollSCM '* * * * *'
     }
